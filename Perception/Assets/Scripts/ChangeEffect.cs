@@ -38,15 +38,18 @@ public class ChangeEffect : MonoBehaviour
             vpNormal.targetCamera = temp;
             vpEffect.targetCamera = cam;
             other.isOn = false;
+            other.interactable = false;
         }
         else if(other.isOn) //If the other one is on, this will goto a different camera
         {
             vpEffect.targetCamera = temp;
+           
         }
         else // If both are off it'll set the normal camera to the normal video
         {
             vpNormal.targetCamera = cam;
             vpEffect.targetCamera = temp;
+            other.interactable = true;
         }
     }
 }

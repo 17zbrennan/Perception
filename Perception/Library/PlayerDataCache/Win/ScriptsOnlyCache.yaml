@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ChangeEffect
+    - Credits
+    - SceneNavigation
     - Wilberforce.ChangeColor
     - Wilberforce.Colorblind
     Unity.Rider.Editor.dll:
@@ -19,16 +21,73 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
   sceneClasses:
+    Assets/Scenes/Menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11154}
+    - Class: 114
+      Script: {instanceID: 11314}
+    - Class: 114
+      Script: {instanceID: 11354}
+    - Class: 114
+      Script: {instanceID: 11736}
+    - Class: 114
+      Script: {instanceID: 12124}
+    - Class: 114
+      Script: {instanceID: 12146}
+    - Class: 114
+      Script: {instanceID: 12600}
+    - Class: 114
+      Script: {instanceID: 12948}
+    - Class: 114
+      Script: {instanceID: 15052}
+    - Class: 114
+      Script: {instanceID: 17904}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Play.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -49,33 +108,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
-    - Class: 114
-      Script: {instanceID: 11312}
+      Script: {instanceID: 11154}
     - Class: 114
       Script: {instanceID: 11314}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11354}
     - Class: 114
-      Script: {instanceID: 11734}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 11926}
+      Script: {instanceID: 11736}
     - Class: 114
-      Script: {instanceID: 12594}
+      Script: {instanceID: 11748}
     - Class: 114
-      Script: {instanceID: 12930}
+      Script: {instanceID: 11904}
     - Class: 114
-      Script: {instanceID: 12942}
+      Script: {instanceID: 11932}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 12600}
     - Class: 114
-      Script: {instanceID: 16054}
+      Script: {instanceID: 12936}
     - Class: 114
-      Script: {instanceID: 18710}
+      Script: {instanceID: 12948}
+    - Class: 114
+      Script: {instanceID: 12962}
+    - Class: 114
+      Script: {instanceID: 12976}
+    - Class: 114
+      Script: {instanceID: 15052}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -273,6 +336,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: fc1c2cc6c55bf5ed8ce01ecfcf5eb4ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeEffect
+  - hash:
+      serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -289,6 +358,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: d7737a35547e661e540469ced76b87f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Wilberforce
+    className: ChangeColor
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -501,6 +576,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 1001919edf5dfca4b2d3bd32974eac22
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Wilberforce
+    className: Colorblind
+  - hash:
+      serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -519,23 +600,18 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 1001919edf5dfca4b2d3bd32974eac22
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Wilberforce
-    className: Colorblind
-  - hash:
-      serializedVersion: 2
-      Hash: d7737a35547e661e540469ced76b87f3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Wilberforce
-    className: ChangeColor
-  - hash:
-      serializedVersion: 2
-      Hash: fc1c2cc6c55bf5ed8ce01ecfcf5eb4ec
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ChangeEffect
+    className: SceneNavigation
+  - hash:
+      serializedVersion: 2
+      Hash: bef25d547ba0d439f71549bf30dd790a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Credits
   platform: 5
   scenePathNames:
+  - Assets/Scenes/Menu.unity
   - Assets/Scenes/Play.unity
   playerPath: D:/17zbr/Downloads/Perception.exe
